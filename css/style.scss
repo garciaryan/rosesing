@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+// VARIABLES
+$headerColor: #c6c6c6;
+$mainFont: 'Ubuntu', sans-serif;
+// UNIVERSALS
+
+html {
+  body {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+// HEADER
+header {
+  background-color: $headerColor;
+  nav {
+  font-family: $mainFont;
+  }
+}
