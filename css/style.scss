@@ -19,3 +19,16 @@ header {
   font-family: $mainFont;
   }
 }
+
+// OVERVIEW
+.ov-pic {
+  height: 525px;
+  width: 620px;
+  border: 1px solid #000;
+}
+
+.ov-content {
+  font-family: $mainFont;
+  text-align: justify;
+  padding-right: 35px;
+}
