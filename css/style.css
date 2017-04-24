@@ -3,6 +3,9 @@ html body {
   height: 100%;
   width: 100%; }
 
+.line {
+  border-bottom: 1px solid #000; }
+
 header {
   background-color: #c6c6c6; }
   header nav {
@@ -17,5 +20,11 @@ header {
   font-family: "Ubuntu", sans-serif;
   text-align: justify;
   padding-right: 35px; }
+
+.page-break {
+  margin-top: 100px; }
+
+.serv-cont {
+  text-align: center; }
 
 /*# sourceMappingURL=style.css.map */
