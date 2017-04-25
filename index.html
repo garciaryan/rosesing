@@ -38,7 +38,7 @@
                 <li><a href="#">Public Service</a></li>
               </ul>
             </li>
-            <li><a href="#">Contact</a></li>
+            <li data-toggle="modal" data-target="#myModal"><a href="#">Contact</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
@@ -128,7 +128,23 @@
   </div>
   <!-- Services Section Ends -->
   <!-- Contact Section Begins -->
-  
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Contact Us</h4>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- Contact Section Ends -->
   <footer>
     <div class="container">
