@@ -1,16 +1,28 @@
 @import url("https://fonts.googleapis.com/css?family=Ubuntu");
 html body {
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  background-color: #b5b3b3; }
 
 .line {
   border-bottom: 1px solid #000;
-  padding-bottom: 175px; }
+  padding-bottom: 75px; }
 
 header {
   background-color: #c6c6c6; }
   header nav {
     font-family: "Ubuntu", sans-serif; }
+
+.open .dropdown-menu {
+  display: block; }
+
+#carousel-example-generic {
+  position: relative;
+  bottom: 17px; }
+
+#img-resize {
+  height: 720px;
+  width: 100%; }
 
 .ov-pic {
   height: 525px;
@@ -23,10 +35,25 @@ header {
   padding-right: 35px; }
 
 .page-break {
-  margin-top: 100px;
+  margin-top: 50px;
   padding-top: 75px; }
 
 .serv-cont {
   text-align: center; }
+
+h3 {
+  text-decoration: underline; }
+
+#img-pad {
+  padding-bottom: 100px; }
+
+footer {
+  background-color: #f8f8f8;
+  width: 100%;
+  height: 120px;
+  font-size: 10px;
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+  padding-top: 38px; }
 
 /*# sourceMappingURL=style.css.map */

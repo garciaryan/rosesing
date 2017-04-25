@@ -11,7 +11,7 @@
 </head>
 <body>
   <header>
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -27,7 +27,7 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav pull-right">
-            <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Overview <span class="sr-only">(current)</span></a></li>
             <li><a href="#">Services</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
@@ -56,19 +56,19 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <img src="img/box.jpg" alt="electrical box">
-        <div class="carousel-caption">
-          <p>Your content here</p>
-        </div>
-      </div>
-      <div class="item">
         <img src="img/bulbs.jpg" alt="bulbs">
         <div class="carousel-caption">
           <p>Your content here</p>
         </div>
       </div>
       <div class="item">
-        <img src="img/city.jpg" alt="city">
+        <img src="img/box.jpg" alt="electrical box">
+        <div class="carousel-caption">
+          <p>Your content here</p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="img/city.jpg" alt="city" id="img-resize">
         <div class="carousel-caption">
           <p>Your content here</p>
         </div>
@@ -113,7 +113,7 @@
   <div class="container-fluid page-break">
     <div class="row">
       <div class="col-md-6 ov-content serv-cont">
-        <h3>Services</h3><br><br>
+        <h3>Services</h3><br>
         <h5>Electrical Engineering</h5>
         <h5>Electrical Design</h5>
         <h5>Lighting Design</h5>
@@ -121,12 +121,23 @@
         <h5>Arc Flash Studies</h5>
         <h5>Fire Alarm System Design</h5>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6" id="img-pad">
         <img src="img/volt.jpg" alt="stock photo" class="ov-pic img-responsive">
       </div>
     </div>
   </div>
   <!-- Services Section Ends -->
-  <script src="js/bootstrap.min.js"></script>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p>Rose Sing and Associates, Inc.</p>
+          <p>131 S. Dunworth St., Visalia, CA 93292-6705</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </body>
 </html>
