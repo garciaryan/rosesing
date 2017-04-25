@@ -38,7 +38,7 @@ header {
 
 .navbar-nav {
   position: relative;
-  top: 33px;
+  top: 35px;
   font-size: 18px;
 }
 
@@ -96,6 +96,23 @@ h3 {
   padding-bottom: 100px;
 }
 
+// CONTACT MODAL
+#myModal {
+  font-family: $mainFont;
+}
+
+#myModalLabel {
+  text-align: center;
+}
+
+.contact-info {
+  text-align: center;
+  padding-left: 100px;
+}
+
+.modal-footer {
+  border: none;
+}
 // FOOTER
 
 footer {
