@@ -58,19 +58,19 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <img src="img/bulbs.jpg" alt="bulbs">
+        <img src="img/bulbs.jpg" alt="bulbs" class="img-responsive">
         <div class="carousel-caption">
           <p>Your content here</p>
         </div>
       </div>
       <div class="item">
-        <img src="img/box.jpg" alt="electrical box">
+        <img src="img/box.jpg" alt="electrical box" class="img-responsive">
         <div class="carousel-caption">
           <p>Your content here</p>
         </div>
       </div>
       <div class="item">
-        <img src="img/city.jpg" alt="city" id="img-resize">
+        <img src="img/city.jpg" alt="city" id="img-resize" class="img-responsive">
         <div class="carousel-caption">
           <p>Your content here</p>
         </div>
@@ -130,7 +130,6 @@
   </div>
   <!-- Services Section Ends -->
   <!-- Contact Section Begins -->
-  <?php include('email.php');?>
   <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -140,21 +139,21 @@
           <p class="contact-info pull-left">Ted Rose: <br> (559)733-2671 x101 <br> (559)733-2339 Fax <br>trose@rosesing.com</p>
           <p class="contact-info">Donnie Sing: <br> (559)733-2671 x102 <br> (559)733-0372 Fax <br>dsing@rosesing.com</p>
         </div>
-        <div class="modal-body">
+        <div class="modal-body center-block">
           <form id="contact_form" action="php/email.php" method="POST" enctype="multipart/form-data">
           	<div class="row">
-          		<label for="name">Your name:</label><br />
-          		<input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+          		<label for="name">Your name:</label><br>
+          		<input id="name" class="input" name="name" type="text" value="" size="30"><br><br>
           	</div>
           	<div class="row">
-          		<label for="email">Your email:</label><br />
-          		<input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+          		<label for="email">Your email:</label><br>
+          		<input id="email" class="input" name="email" type="text" value="" size="30" placeholder="example@gmail.com"><br><br>
           	</div>
           	<div class="row">
-          		<label for="message">Your message:</label><br />
-          		<textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+          		<label for="message">Your message:</label><br>
+          		<textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br><br>
           	</div>
-          	<input id="submit_button" type="submit" value="Send email" />
+          	<input class="btn btn-default" type="submit" value="Submit">
           </form>
         </div>
       </div>
