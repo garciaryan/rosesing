@@ -40,7 +40,7 @@
                 <li><a href="#">Public Service</a></li>
               </ul>
             </li>
-            <li data-toggle="modal" data-target="#myModal"><a href="#">Contact</a></li>
+            <li data-toggle="modal" data-target="#myModal"><a>Contact</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
@@ -58,22 +58,13 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <img src="img/bulbs.jpg" alt="bulbs" class="img-responsive">
-        <div class="carousel-caption">
-          <p>Your content here</p>
-        </div>
+        <img src="img/locked.jpg" alt="power" class="img-responsive center-block" id="img-resize">
       </div>
       <div class="item">
-        <img src="img/box.jpg" alt="electrical box" class="img-responsive">
-        <div class="carousel-caption">
-          <p>Your content here</p>
-        </div>
+        <img src="img/box.jpg" alt="electrical box" class="img-responsive" id="img-resize">
       </div>
       <div class="item">
-        <img src="img/city.jpg" alt="city" id="img-resize" class="img-responsive">
-        <div class="carousel-caption">
-          <p>Your content here</p>
-        </div>
+        <img src="img/AC.jpg" alt="AC" class="img-responsive center-block">
       </div>
     </div>
 
@@ -112,7 +103,7 @@
   <!-- Overview Section Ends -->
   <div class="container line" id="services"></div>
   <!-- Services Section Begins -->
-  <div class="container-fluid page-break">
+  <div class="container-fluid page-break break-two">
     <div class="row">
       <div class="col-md-6 ov-content serv-cont">
         <h3>Services</h3><br>
@@ -142,15 +133,15 @@
         <div class="modal-body">
           <form id="contact_form" action="php/email.php" method="POST" enctype="multipart/form-data">
           	<div class="row">
-          		<label for="name">Your name:</label><br>
+          		<label for="name">Name:</label><br>
           		<input id="name" class="input" name="name" type="text" value="" size="30"><br><br>
           	</div>
           	<div class="row">
-          		<label for="email">Your email:</label><br>
+          		<label for="email">Email:</label><br>
           		<input id="email" class="input" name="email" type="text" value="" size="30" placeholder="example@gmail.com"><br><br>
           	</div>
           	<div class="row">
-          		<label for="message">Your message:</label><br>
+          		<label for="message">Message:</label><br>
           		<textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br><br>
           	</div>
           	<input class="btn btn-default" type="submit" value="Submit">

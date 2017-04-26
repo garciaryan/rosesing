@@ -35,6 +35,6 @@ $('a[href*="#"]')
       }
     }
   });
-//MODAL SCROLL 
-  $('body').css('overflow','hidden');
-  $('body').css('position','fixed');
+//MODAL SCROLL
+  //$('body').css('overflow','hidden');
+  //$('body').css('position','fixed');
