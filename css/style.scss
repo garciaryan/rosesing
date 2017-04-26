@@ -11,15 +11,16 @@ html {
     height: 100%;
     width: 100%;
     background-color: #b5b3b3;
-    .modal-open {
-      overflow: visible;
-    }
   }
 }
 
 .line {
   border-bottom: 1px dotted rgba(0,0,0,.4);
   padding-bottom: 75px;
+}
+
+.line:focus {
+  outline: none;
 }
 
 a {
@@ -66,6 +67,13 @@ header {
   bottom: 17px;
 }
 
+#carousel-example-generic:focus {
+  outline: none;
+}
+
+.carousel-inner:focus {
+  outline: none;
+}
 // OVERVIEW
 .ov-pic {
   height: 525px;
@@ -96,6 +104,7 @@ h3 {
 
 #img-pad {
   padding-bottom: 100px;
+  padding-right: 20px;
 }
 
 // CONTACT MODAL
@@ -117,12 +126,12 @@ h3 {
   background-color: #f8f8f8;
 }
 
-body.modal-open {
-  overflow: visible;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-}
+// body.modal-open {
+//   overflow: visible;
+//   position: absolute;
+//   height: 100%;
+//   width: 100%;
+// }
 
 // FOOTER
 

@@ -3,12 +3,13 @@ html body {
   height: 100%;
   width: 100%;
   background-color: #b5b3b3; }
-  html body .modal-open {
-    overflow: visible; }
 
 .line {
   border-bottom: 1px dotted rgba(0, 0, 0, 0.4);
   padding-bottom: 75px; }
+
+.line:focus {
+  outline: none; }
 
 a {
   cursor: pointer;
@@ -46,6 +47,12 @@ header {
   position: relative;
   bottom: 17px; }
 
+#carousel-example-generic:focus {
+  outline: none; }
+
+.carousel-inner:focus {
+  outline: none; }
+
 .ov-pic {
   height: 525px;
   width: 620px;
@@ -67,7 +74,8 @@ h3 {
   text-decoration: underline; }
 
 #img-pad {
-  padding-bottom: 100px; }
+  padding-bottom: 100px;
+  padding-right: 20px; }
 
 #myModal {
   font-family: "Playfair Display", serif; }
@@ -82,12 +90,6 @@ h3 {
 .modal-body {
   text-align: center;
   background-color: #f8f8f8; }
-
-body.modal-open {
-  overflow: visible;
-  position: absolute;
-  height: 100%;
-  width: 100%; }
 
 footer {
   background-color: #f8f8f8;

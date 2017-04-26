@@ -35,6 +35,7 @@ $('a[href*="#"]')
       }
     }
   });
-//MODAL SCROLL
-  //$('body').css('overflow','hidden');
-  //$('body').css('position','fixed');
+//PAGE REFRESH
+$(window).on('beforeunload', function() {
+   $(window).scrollTop(0);
+});
