@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
+
+.info {
+  padding-top: 75px;
+  text-align: center;
+  text-decoration: underline;
+  font-family: 'Playfair Display', serif;
+}
