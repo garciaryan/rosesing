@@ -13,14 +13,16 @@ h2 {
   padding-bottom: 20px;
   text-align: right;
   font-family: 'Playfair Display', serif;
+  overflow-y: hidden;
 }
 
 .schools {
   font-family: 'Playfair Display', serif;
+  position: relative;
   text-align: center;
   overflow-y: visible;
 }
 
 #education-carousel {
-
+  position: sticky;
 }
