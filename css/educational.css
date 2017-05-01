@@ -1,9 +1,26 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 
+h3 {
+  text-decoration: none;
+}
 
+h2 {
+  text-decoration: underline;
+}
 .info {
   padding-top: 75px;
-  text-align: center;
-  text-decoration: underline;
+  padding-right: 160px;
+  padding-bottom: 20px;
+  text-align: right;
   font-family: 'Playfair Display', serif;
+}
+
+.schools {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  overflow-y: visible;
+}
+
+#education-carousel {
+
 }
