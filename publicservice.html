@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="keywords" content="rose sing and associates, rose sing, educational, commercial, health care, public service, clinics, hospitals, schools, office">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Rose Sing</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="index.html"><img src="img/rsalogo1.jpg" alt="Logo" class="logo pull-left"></a>
+          <a class="navbar-brand pull-left" href="index.html">Rose Sing and Associates, Inc.</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav pull-right">
+            <li><a href="index.html">Overview <span class="sr-only">(current)</span></a></li>
+            <li><a href="index.html">Services</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="educational.html">Educational</a></li>
+                <li><a href="commercial.html">Commercial</a></li>
+                <li><a href="healthcare.html">Health Care</a></li>
+                <li><a href="publicservice.html">Public Service</a></li>
+              </ul>
+            </li>
+            <li data-toggle="modal" data-target="#myModal"><a>Contact</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+  </header>
+  <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h2 id="myModalLabel">Contact Us</h2><br>
+          <p class="contact-info pull-left">Ted Rose: <br> (559)733-2671 x101 <br> (559)733-2339 Fax <br>trose@rosesing.com</p>
+          <p class="contact-info">Donnie Sing: <br> (559)733-2671 x102 <br> (559)733-0372 Fax <br>dsing@rosesing.com</p>
+        </div>
+        <div class="modal-body">
+          <form id="contact_form" action="php/email.php" method="POST" enctype="multipart/form-data">
+          	<div class="row">
+          		<label for="name">Name:</label><br>
+          		<input id="name" class="input" name="name" type="text" value="" size="30"><br><br>
+          	</div>
+          	<div class="row">
+          		<label for="email">Email:</label><br>
+          		<input id="email" class="input" name="email" type="text" value="" size="30" placeholder="example@gmail.com"><br><br>
+          	</div>
+          	<div class="row">
+          		<label for="message">Message:</label><br>
+          		<textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br><br>
+          	</div>
+          	<input class="btn btn-default" type="submit" value="Submit">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p>Rose Sing and Associates, Inc.</p>
+          <p>131 S. Dunworth St., Visalia, CA 93292-6705</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="email.php"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="js/mail.js"></script>
+  <script src="js/stopMail.js"></script>
+  <script src="js/scrolls.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>

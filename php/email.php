@@ -1,34 +1,42 @@
 <?php
-$action=$_REQUEST['action'];
-if ($action=="")    /* display the contact form */
-    {
-    ?>
-    <form  action="" method="POST" enctype="multipart/form-data">
-    <input type="hidden" name="action" value="submit">
-    Your name:<br>
-    <input name="name" type="text" value="" size="30"/><br>
-    Your email:<br>
-    <input name="email" type="text" value="" size="30"/><br>
-    Your message:<br>
-    <textarea name="message" rows="7" cols="30"></textarea><br>
-    <input type="submit" value="Send email"/>
-    </form>
-    <?php
-    }
-else                /* send the submitted data */
-    {
-    $name=$_REQUEST['name'];
-    $email=$_REQUEST['email'];
-    $message=$_REQUEST['message'];
-    if (($name=="")||($email=="")||($message==""))
-        {
-        echo "All fields are required, please fill <a href=\"\">the form</a> again.";
-        }
-    else{
-        $from="From: $name<$email>\r\nReturn-path: $email";
-        $subject="Message sent using your contact form";
-        mail("garciaryan007@yahoo.com.com", $subject, $message, $from);
-        echo "Email sent!";
-        }
-    }
+//if "email" variable is filled out, send email
+  if (isset($_REQUEST['email']))  {
+
+  //Email information
+  $admin_email = "garciaryan007@yahoo.com";
+  $name = $_REQUEST['name'];
+  $email = $_REQUEST['email'];
+  $message = $_REQUEST['message'];
+
+  //send email
+  mail($admin_email, "$name", $message, "From:" . $email);
+
+  //Email response
+  echo "Thank you for contacting us!";
+  }
+
+  //if "email" variable is not filled out, display the form
+  else  {
+?>
+
+<form id="contact_form" action="php/email.php" method="POST" enctype="multipart/form-data">
+  <div class="row">
+    <label for="name">Name:</label><br>
+    <input id="name" class="input" name="name" type="text" value="" size="30"><br><br>
+  </div>
+  <div class="row">
+    <label for="email">Email:</label><br>
+    <input id="email" class="input" name="email" type="text" value="" size="30"><br><br>
+  </div>
+  <div class="row">
+    <label for="message">Message:</label><br>
+    <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br><br>
+  </div>
+  <input class="btn btn-default" type="submit" value="Submit">
+</form>
+
+<?php
+  }
+  header("Location: http://localhost/rosesing"); /* Redirect browser */
+  exit();
 ?>

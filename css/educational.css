@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700');
+
+h3 {
+  text-decoration: none;
+}
+
+h2, h1 {
+  text-decoration: underline;
+}
+.info-header {
+  padding-top: 87px;
+  padding-bottom: 35px;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  overflow-y: hidden;
+}
+
+.content {
+  font-family: 'Playfair Display', serif;
+  position: relative;
+  text-align: center;
+  overflow-y: scroll;
+  height: 535px;
+}
