@@ -61,7 +61,7 @@ header {
 .ov-content {
   font-family: "Playfair Display", serif;
   text-align: justify;
-  padding-right: 35px; }
+  padding-left: 17px; }
 
 .page-break {
   margin-top: 50px;
@@ -135,7 +135,7 @@ footer {
 @media (max-width: 480px) {
   #img-resize {
     height: 281.25px;
-    width: 375px; } }
+    background: cover; } }
 @media (max-width: 480px) {
   .break-two {
     margin-top: -50px;
@@ -143,5 +143,17 @@ footer {
 @media (max-width: 480px) {
   .contact-info {
     padding-left: 25px; } }
+@media (max-width: 480px) {
+  #home-carousel {
+    padding-top: 65px; } }
+@media (max-width: 480px) {
+  #overview {
+    display: none; } }
+@media (max-width: 480px) {
+  .ov-pic {
+    height: 225px;
+    width: 320px;
+    margin-left: 32px;
+    margin-top: 65px; } }
 
 /*# sourceMappingURL=style.css.map */
