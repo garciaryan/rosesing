@@ -2,7 +2,8 @@
 html body {
   height: 100%;
   width: 100%;
-  background-color: #b5b3b3; }
+  background-color: #b5b3b3;
+  -webkit-overflow-scrolling: touch; }
 
 .line {
   border-bottom: 1px dotted rgba(0, 0, 0, 0.4);
