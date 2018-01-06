@@ -1,23 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 
-h3 {
-  text-decoration: none;
-}
 
-h1 {
+.info {
+  padding-top: 75px;
+  text-align: center;
   text-decoration: underline;
-}
-.info-header {
-  padding-top: 87px;
-  padding-bottom: 35px;
-  text-align: center;
   font-family: 'Playfair Display', serif;
-  overflow-y: hidden;
-}
-
-.content {
-  font-family: 'Playfair Display', serif;
-  position: relative;
-  text-align: center;
-  overflow-y: scroll;
-  height: 535px;
 }
