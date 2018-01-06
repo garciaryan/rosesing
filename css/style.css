@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display");
+@import url("https://fonts.googleapis.com/css?family=Raleway");
 html body {
   height: 100%;
   width: 100%;
@@ -19,7 +19,7 @@ a {
 header {
   background-color: #c6c6c6; }
   header nav {
-    font-family: "Playfair Display", serif;
+    font-family: "Raleway", sans-serif;
     height: 90px; }
 
 .fadeIn {
@@ -63,7 +63,7 @@ header {
   border: 1px solid #000; }
 
 .ov-content {
-  font-family: "Playfair Display", serif;
+  font-family: "Raleway", sans-serif;
   text-align: justify;
   padding-left: 17px; }
 
@@ -90,7 +90,7 @@ h3 {
   padding-right: 20px; }
 
 #myModal {
-  font-family: "Playfair Display", serif; }
+  font-family: "Raleway", sans-serif; }
 
 #myModalLabel {
   text-align: center; }
@@ -108,7 +108,7 @@ footer {
   width: 100%;
   height: 120px;
   font-size: 12px;
-  font-family: "Playfair Display", serif;
+  font-family: "Raleway", sans-serif;
   text-align: center;
   padding-top: 38px; }
 
