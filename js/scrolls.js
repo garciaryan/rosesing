@@ -30,7 +30,7 @@ $('a[href*="#"]')
           } else {
             $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
             $target.focus(); // Set focus again
-          };
+          }
         });
       }
     }
@@ -48,7 +48,7 @@ $("#contact_form").submit(function(e) {
 
     $.ajax({
            type: "POST",
-           url: "http://localhost"
+           url: "http://localhost",
            data: $("#contact_form").serialize(), // serializes the form's elements.
            success: function(data)
            {
