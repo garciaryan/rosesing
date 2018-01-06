@@ -6,7 +6,7 @@ $("#contact_form").submit(function(e) {
 
     $.ajax({
            type: "POST",
-           url: "http://localhost"
+           url: "http://localhost",
            data: $("#contact_form").serialize(), // serializes the form's elements.
            success: function(data)
            {
