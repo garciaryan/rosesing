@@ -22,6 +22,9 @@ header {
     font-family: "Playfair Display", serif;
     height: 90px; }
 
+.fadeIn {
+  animation-duration: 3.5s; }
+
 .navbar-brand {
   position: relative;
   top: 33px;
