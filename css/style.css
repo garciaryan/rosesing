@@ -13,7 +13,6 @@ html body {
   outline: none; }
 
 a {
-  cursor: pointer;
   cursor: hand; }
 
 header {
@@ -22,18 +21,30 @@ header {
     font-family: "Raleway", sans-serif;
     height: 90px; }
 
+.main-title {
+  font-weight: bold;
+  color: #262965; }
+
 .fadeIn {
   animation-duration: 3.5s; }
 
+.flex {
+  height: 89px;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row-reverse; }
+
 .navbar-brand {
   position: relative;
-  top: 33px;
-  padding-left: 45px;
-  font-size: 25px; }
+  font-size: 25px;
+  padding: 15px 20px; }
+
+.navbar-header {
+  display: flex;
+  align-items: center; }
 
 .navbar-nav {
   position: relative;
-  top: 35px;
   font-size: 18px; }
 
 .open .dropdown-menu {
@@ -47,10 +58,8 @@ header {
   margin-right: 0;
   padding-top: 15px; }
 
-.tabs {
-  position: relative; }
-
 .tabs:hover {
+  margin-bottom: -1px;
   border-bottom: 1px solid #000; }
 
 #home-carousel {
@@ -133,6 +142,9 @@ footer {
   position: relative;
   top: 20px; }
 
+@media (min-width: 768px) {
+  .navbar > .container-fluid .navbar-brand {
+    margin-left: 0; } }
 @media (max-width: 480px) {
   .container-fluid > .navbar-header {
     position: relative;
