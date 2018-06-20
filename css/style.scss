@@ -66,6 +66,14 @@ header {
   margin-right: 0;
   padding-top: 15px;
 }
+
+.tabs {
+  position: relative;
+}
+
+.tabs:hover {
+  border-bottom: 1px solid #000;
+}
 //CAROUSEL
 #home-carousel {
   position: relative;

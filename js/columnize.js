@@ -1,4 +1,4 @@
 //Columnizer
 
-$('p').columnize({width: 200;});
+$('p').columnize({width: 200});
 //$('.right').columnize();

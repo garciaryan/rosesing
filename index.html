@@ -32,9 +32,9 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav pull-right">
-            <li><a href="#overview">Overview <span class="sr-only">(current)</span></a></li>
-            <li><a href="#services">Services</a></li>
-            <li class="dropdown">
+            <li class="tabs"><a href="#overview">Overview <span class="sr-only">(current)</span></a></li>
+            <li class="tabs"><a href="#services">Services</a></li>
+            <li class="dropdown tabs">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="views/educational.html">Educational</a></li>
@@ -43,7 +43,7 @@
                 <li><a href="views/publicservice.html">Public Service</a></li>
               </ul>
             </li>
-            <li data-toggle="modal" data-target="#myModal"><a>Contact</a></li>
+            <li data-toggle="modal" data-target="#myModal" class="tabs"><a>Contact</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
@@ -194,6 +194,7 @@
   <script src="js/mail.js"></script>
   <script src="js/stopMail.js"></script>
   <script src="js/scrolls.js"></script>
+  <script src="js/animations.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </body>
 </html>
